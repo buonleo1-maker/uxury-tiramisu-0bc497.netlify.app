@@ -1,0 +1,39 @@
+body {
+    font-family: 'Inter','Segoe UI',sans-serif;
+    margin:0;
+    padding:0;
+    background:#eef4ff;
+}
+
+.box {
+    background:#fff;
+    margin:20px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+input, select, button {
+    width:100%;
+    padding:14px;
+    border-radius:12px;
+    border:1px solid #ccc;
+    margin-top:10px;
+}
+
+button {
+    background:#0A0F51;
+    color:#fff;
+    font-size:1.1em;
+}
+#toast {
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#0A0F51;
+    color:white;
+    padding:12px 22px;
+    border-radius:12px;
+    display:none;
+}

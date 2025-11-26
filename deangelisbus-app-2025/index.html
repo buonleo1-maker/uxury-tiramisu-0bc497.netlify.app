@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DEANGELISBUS – Presenze</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+<meta name="theme-color" content="#0A0F51">
+
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="login-box" class="box">
+    <h2>Accedi</h2>
+
+    <input type="text" id="login-nome" placeholder="Nome Autista">
+    <input type="password" id="login-pin" placeholder="PIN">
+
+    <button id="login-btn">Entra</button>
+</div>
+
+<!-- INSERISCI PRESENZA -->
+<div id="main-box" class="box" style="display:none;">
+    <h2>Inserisci Presenza</h2>
+
+    <label>Data</label>
+    <input type="date" id="data">
+
+    <label>Ora Inizio</label>
+    <input type="time" id="oraInizio">
+
+    <label>Ora Fine</label>
+    <input type="time" id="oraFine">
+
+    <label>Tipo</label>
+    <select id="tipo">
+        <option value="Servizio">Servizio</option>
+        <option value="Navetta">Navetta</option>
+        <option value="Scalo">Scalo</option>
+    </select>
+
+    <label>Descrizione Turno</label>
+    <input type="text" id="descrizione" placeholder="Turno...">
+
+    <button id="salva-btn">Salva Presenza</button>
+
+</div>
+
+<div id="toast"></div>
+
+<script src="js/app.js"></script>
+
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+</body>
+</html>
